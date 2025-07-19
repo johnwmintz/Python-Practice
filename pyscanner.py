@@ -43,7 +43,7 @@ def sock21():
 
 x21=sock21()
 
-print (x21)
+
 
 
 #This function has been QA by JWM on 7/18/25
@@ -58,7 +58,7 @@ def sock22():
 
 x22=sock22()
 
-print (x22)
+
 
 #This function has been QA by JWM on 7/18/25
 def sock25():
@@ -72,7 +72,7 @@ def sock25():
 
 x25=sock25()
 
-print (x25)
+
 
 #This function has been QA by JWM on 7/18/25
 def sock53():
@@ -86,7 +86,7 @@ def sock53():
 
 x53=sock53()
 
-print (x53)
+
 
 
 #This function has been QA by JWM on 7/18/25
@@ -101,7 +101,7 @@ def sock80():
 
 x80=sock80()
 
-print (x80)
+
 
 def sock88():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -114,7 +114,7 @@ def sock88():
 
 x88=sock88()
 
-print (x88)
+
 
 
 def sock135():
@@ -128,7 +128,7 @@ def sock135():
 
 x135=sock135()
 
-print (x135)
+
 
 
 def sock139():
@@ -142,7 +142,7 @@ def sock139():
 
 x139=sock139()
 
-print (x139)
+
 
 
 
@@ -159,5 +159,5 @@ def sock443():
 
 x443=sock443()
 
-print (x443)
+
 
