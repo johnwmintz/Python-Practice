@@ -19,7 +19,7 @@ port53=53 #added 7/18/25 with function
 port80=80 #added 7/18/25 with function
 port88=88 #added 7/19/25 with function
 port135=135 #added 7/19/25 with function
-port139=139
+port139=139 #added 7/19/25 with function
 port389=389
 port443=443 #added 7/18/25 with function
 port445=445
@@ -115,6 +115,20 @@ def sock88():
 x88=sock88()
 
 print (x88)
+
+
+def sock135():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((ipaddr,port135))
+    if result == 0:
+        print ("Port 135 is open")
+    else:
+        print ("Port 135 is not open")
+    sock.close()
+
+x135=sock135()
+
+print (x135)
 
 
 def sock139():
