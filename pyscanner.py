@@ -61,6 +61,20 @@ x25=sock25()
 print (x25)
 
 
+def sock53():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((ipaddr,port53))
+    if result == 0:
+        print ("Port 53 is open")
+    else:
+        print ("Port 53 is not open")
+    sock.close()
+
+x53=sock53()
+
+print (x53)
+
+
 
 def sock80():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -74,4 +88,19 @@ def sock80():
 x80=sock80()
 
 print (x80)
+
+
+
+def sock443():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((ipaddr,port443))
+    if result == 0:
+        print ("Port 443 is open")
+    else:
+        print ("Port 443 is not open")
+    sock.close()
+
+x443=sock443()
+
+print (x443)
 
