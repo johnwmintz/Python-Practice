@@ -17,7 +17,7 @@ port22=22 #added 7/18/25 with function
 port25=25 #added 7/18/25 with function
 port53=53 #added 7/18/25 with function
 port80=80 #added 7/18/25 with function
-port88=88
+port88=88 #added 7/19/25 with function
 port135=135
 port139=139
 port389=389
@@ -102,6 +102,19 @@ def sock80():
 x80=sock80()
 
 print (x80)
+
+def sock88():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((ipaddr,port88))
+    if result == 0:
+        print ("Port 88 is open")
+    else:
+        print ("Port 88 is not open")
+    sock.close()
+
+x88=sock88()
+
+print (x88)
 
 
 #This function has been QA by JWM on 7/18/25
