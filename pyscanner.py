@@ -10,13 +10,26 @@ import socket
 
 ipaddr='127.0.0.1'#This must be changed to the target IP
 
+#port variables
 #You can add more port but must create a function like the ones below for functionality.
-port21=21
-port22=22
-port25=25
-port53=53
-port80=80
-port443=443
+port21=21 #added 7/18/25 with function
+port22=22 #added 7/18/25 with function
+port25=25 #added 7/18/25 with function
+port53=53 #added 7/18/25 with function
+port80=80 #added 7/18/25 with function
+port88=88
+port135=135
+port139=139
+port389=389
+port443=443 #added 7/18/25 with function
+port445=445
+port464=464
+port593=593
+port636=636
+port3268=3268
+port3269=3269
+port5985=5985
+port9389=9389
 
 #This function has been QA by JWM on 7/18/25
 def sock21():
