@@ -18,6 +18,7 @@ port53=53
 port80=80
 port443=443
 
+#This function has been QA by JWM on 7/18/25
 def sock21():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port21))
@@ -32,7 +33,7 @@ x21=sock21()
 print (x21)
 
 
-
+#This function has been QA by JWM on 7/18/25
 def sock22():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port22))
@@ -46,7 +47,7 @@ x22=sock22()
 
 print (x22)
 
-
+#This function has been QA by JWM on 7/18/25
 def sock25():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port25))
@@ -60,7 +61,7 @@ x25=sock25()
 
 print (x25)
 
-
+#This function has been QA by JWM on 7/18/25
 def sock53():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port53))
@@ -75,7 +76,7 @@ x53=sock53()
 print (x53)
 
 
-
+#This function has been QA by JWM on 7/18/25
 def sock80():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port80))
@@ -90,7 +91,7 @@ x80=sock80()
 print (x80)
 
 
-
+#This function has been QA by JWM on 7/18/25
 def sock443():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port443))
