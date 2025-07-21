@@ -7,8 +7,9 @@
 
 
 import socket
+import sys
 
-ipaddr='127.0.0.1'#This must be changed to the target IP
+ipaddr='127.0.0.1'#This has to be changed before running scan
 
 #port variables
 #You can add more port but must create a function like the ones below for functionality.
@@ -36,9 +37,9 @@ def sock21():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port21))
     if result == 0:
-        print ("Port 21 is open")
+        print ("Port 21 open")
     else:
-        print ("Port 21 is not open")
+        print ("Port 21 closed")
     sock.close()
 
 x21=sock21()
@@ -51,9 +52,9 @@ def sock22():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port22))
     if result == 0:
-        print ("Port 22 is open")
+        print ("Port 22 open")
     else:
-        print ("Port 22 is not open")
+        print ("Port 22 closed")
     sock.close()
 
 x22=sock22()
@@ -65,9 +66,9 @@ def sock25():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port25))
     if result == 0:
-        print ("Port 25 is open")
+        print ("Port 25 open")
     else:
-        print ("Port 25 is not open")
+        print ("Port 25 closed")
     sock.close()
 
 x25=sock25()
@@ -79,9 +80,9 @@ def sock53():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port53))
     if result == 0:
-        print ("Port 53 is open")
+        print ("Port 53 open")
     else:
-        print ("Port 53 is not open")
+        print ("Port 53 closed")
     sock.close()
 
 x53=sock53()
@@ -94,9 +95,9 @@ def sock80():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port80))
     if result == 0:
-        print ("Port 80 is open")
+        print ("Port 80 open")
     else:
-        print ("Port 80 is not open")
+        print ("Port 80 closed")
     sock.close()
 
 x80=sock80()
@@ -107,9 +108,9 @@ def sock88():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port88))
     if result == 0:
-        print ("Port 88 is open")
+        print ("Port 88 open")
     else:
-        print ("Port 88 is not open")
+        print ("Port 88 closed")
     sock.close()
 
 x88=sock88()
@@ -121,9 +122,9 @@ def sock135():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port135))
     if result == 0:
-        print ("Port 135 is open")
+        print ("Port 135 open")
     else:
-        print ("Port 135 is not open")
+        print ("Port 135 closed")
     sock.close()
 
 x135=sock135()
@@ -135,12 +136,23 @@ def sock139():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port139))
     if result == 0:
-        print ("Port 139 is open")
+        print ("Port 139 open")
     else:
-        print ("Port 139 is not open")
+        print ("Port 139 closed")
     sock.close()
 
 x139=sock139()
+
+def sock389():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((ipaddr,port389))
+    if result == 0:
+        print ("Port 389 open")
+    else:
+        print ("Port 389 closed")
+    sock.close()
+
+x389=sock389()
 
 
 
@@ -152,9 +164,9 @@ def sock443():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = sock.connect_ex((ipaddr,port443))
     if result == 0:
-        print ("Port 443 is open")
+        print ("Port 443 open")
     else:
-        print ("Port 443 is not open")
+        print ("Port 443 closed")
     sock.close()
 
 x443=sock443()
