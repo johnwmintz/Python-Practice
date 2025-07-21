@@ -21,11 +21,11 @@ port80=80 #added 7/18/25 with function
 port88=88 #added 7/19/25 with function
 port135=135 #added 7/19/25 with function
 port139=139 #added 7/19/25 with function
-port389=389
+port389=389 #added 7/20/25 with function
 port443=443 #added 7/18/25 with function
-port445=445
-port464=464
-port593=593
+port445=445 #added 7/20/25 with function
+port464=464 #added 7/20/25 with function
+port593=593 #added 7/20/25 with function
 port636=636
 port3268=3268
 port3269=3269
@@ -171,5 +171,40 @@ def sock443():
 
 x443=sock443()
 
+
+def sock445():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((ipaddr,port445))
+    if result == 0:
+        print ("Port 445 open")
+    else:
+        print ("Port 445 closed")
+    sock.close()
+
+x445=sock445()
+
+
+def sock464():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((ipaddr,port464))
+    if result == 0:
+        print ("Port 464 open")
+    else:
+        print ("Port 464 closed")
+    sock.close()
+
+x464=sock464()
+
+
+def sock593():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((ipaddr,port593))
+    if result == 0:
+        print ("Port 593 open")
+    else:
+        print ("Port 593 closed")
+    sock.close()
+
+x593=sock593()
 
 
