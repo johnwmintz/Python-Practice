@@ -26,7 +26,7 @@ port443=443 #added 7/18/25 with function
 port445=445 #added 7/20/25 with function
 port464=464 #added 7/20/25 with function
 port593=593 #added 7/20/25 with function
-port636=636
+port636=636 #added 7/20/25 with function
 port3268=3268
 port3269=3269
 port5985=5985
@@ -206,5 +206,19 @@ def sock593():
     sock.close()
 
 x593=sock593()
+
+
+
+
+def sock636():
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = sock.connect_ex((ipaddr,port636))
+    if result == 0:
+        print ("Port 636 open")
+    else:
+        print ("Port 636 closed")
+    sock.close()
+
+x636=sock636()
 
 
