@@ -27,8 +27,13 @@ port445=445 #added 7/20/25 with function
 port464=464 #added 7/20/25 with function
 port593=593 #added 7/20/25 with function
 port636=636 #added 7/20/25 with function
+port1434=1434
+port2382=2382
+port2383=2383
 port3268=3268
 port3269=3269
+port5022=5022
+port7022=7022
 port5985=5985
 port9389=9389
 
